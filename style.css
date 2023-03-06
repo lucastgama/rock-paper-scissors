@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(28, 48, 80);
+  background: radial-gradient(
+    circle,
+    rgba(28, 48, 80, 1) 0%,
+    rgba(22, 25, 60, 1) 100%
+  );
+}
+
+.container {
+  width: 780px;
+  height: 460px;
+}
+.container__score {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 10px;
+  border: solid 1px #fff;
+}
+.scoreboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #666;
+  height: 75px;
+  width: 135px;
+}
+
+.scoreboard h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.scoreboard h4 {
+  font-size: 20px;
+}
+
+.container__choice {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.container__choice button {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+#choiceRock {
+  background-image: url(img/rock.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#choiceRock:hover {
+  border: solid 8px #df3b57;
+  box-shadow: 0 0 10px #df3b57;
+}
+#choicePaper {
+  background-image: url(img/pper.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#choicePaper:hover {
+  border: solid 8px #2a57eb;
+  box-shadow: 0 0 10px #2a57eb;
+}
+#choiceScissors {
+  background-image: url(img/scissors.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#choiceScissors:hover {
+  border: solid 8px #eda721;
+  box-shadow: 0 0 10px #eda721;
+}
